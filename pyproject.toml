@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "YouTubeAutoBackupTool"
+version = "1.0.0"
+description = "A professional PySide6-based tool for backing up YouTube videos and channels"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+dependencies = [
+    "pyside6>=6.5.0",
+    "yt-dlp>=2023.3.4",
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+youtube-auto-backup = "main:main"
